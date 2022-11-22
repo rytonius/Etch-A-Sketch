@@ -1,0 +1,56 @@
+:root{
+    --color-1: #171738;
+    --color-2: #2E1760;   
+    --color-3: #3423A6;
+    --color-4: #7180B9;  
+    --color-5: #dff3e4;
+    
+
+    
+
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    border: 4px 4px;
+    border-color: #171738;
+    border-style: outset;
+}
+
+Top {
+    display:flex;
+    border: 4px;
+    border-color: var(--color-1);
+    border-style: ridge;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-5);
+    color: var(--color-1);
+}
+
+Middle {
+    display:grid;
+    grid-template-columns: [left] 80px [right] auto;
+    grid-template-rows: 82.6vh;
+}
+
+Bottom {
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height:11vh;
+    bottom: 0;
+    background-color: var(--color-1);
+    color: var(--color-4);
+}
+
+Right {
+    max-width: 99%;
+    
+}
+
+h1, h2 {
+    margin:0;
+}
