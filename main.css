@@ -1,14 +1,12 @@
-:root{
+:root {
     --color-1: #171738;
-    --color-2: #2E1760;   
+    --color-2: #2E1760;
     --color-3: #3423A6;
-    --color-4: #7180B9;  
+    --color-4: #7180B9;
     --color-5: #dff3e4;
-    
-
-    
 
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -19,7 +17,7 @@ body {
 }
 
 Top {
-    display:flex;
+    display: flex;
     border: 4px;
     border-color: var(--color-1);
     border-style: ridge;
@@ -30,27 +28,49 @@ Top {
 }
 
 Middle {
-    display:grid;
-    grid-template-columns: [left] 80px [right] auto;
+    display: grid;
+    grid-template-columns: [left] 120px [right] auto;
     grid-template-rows: 82.6vh;
+    background-color: var(--color-4);
 }
 
 Bottom {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height:11vh;
+    height: 11vh;
     bottom: 0;
     background-color: var(--color-1);
     color: var(--color-4);
 }
 
-Right {
-    max-width: 99%;
-    
+Left {
+    display: flex;
+    background-color: var(--color-4);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1%;
 }
 
-h1, h2 {
-    margin:0;
+Right {
+    max-width: 98%;
+
+}
+
+h1,
+h2 {
+    margin: 0;
+}
+
+gu {
+    background-color: black;
+    box-sizing: border-box;
+    float: right;
+}
+
+#ResizeButton {
+    font-size: 16px;
+    width: 110px;
 }
